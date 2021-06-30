@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2>Engines Control Panel</h2> 
+<style>
+  P { text-align: center }
+H2 { text-align: center }
+    body {
+    background-color: rgb(240, 241, 237);
+    text-align: center;
+
+    
+            }
+           
+    </style>
+<style>
+    .button {
+      border: black;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: center;
+      cursor: pointer;
+      margin: 60px;
+      width: 12%;
+    }
+        
+    .button1 {background-color: #4CAF50;}
+    .button2 {background-color: #e78b56;} 
+    </style>
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+<form  method="POST" action="slider.php">
+<div> 
+<label for="customRangeA" class="form-label">Engine 1</label>
+<input type="range" class="formRangeA" min="0" max="180" Value= "0" id="customRangeA" name="Engine1">
+<p><b>Value Engine 1:</b> <span id="demoA"></span></p>
+
+<script>
+var formRangeA = document.getElementById("customRangeA");
+var outputA = document.getElementById("demoA");
+outputA.innerHTML = formRangeA.value;
+
+formRangeA.oninput = function() {
+  outputA.innerHTML = this.value;
+}
+</script>
+</div>
+
+<div>
+<label for="customRangeB" class="form-label">Engine 2</label>
+<input type="range" class="formRangeB" min="0" max="180" Value= "0" id="customRangeB" name="Engine2">
+<p><b>Value Engine 2:</b> <span id="demoB"></span></p>
+
+<script>
+var formRangeB = document.getElementById("customRangeB");
+var outputB = document.getElementById("demoB");
+outputB.innerHTML = formRangeB.value;
+
+formRangeB.oninput = function() {
+  outputB.innerHTML = this.value;
+}
+</script>
+</div>
+
+<p>
+<label for="customRangeC" class="form-label">Engine 3</label>
+<input type="range" class="formRangeC" min="0" max="180" Value= "0" id="customRangeC" name="Engine3">
+<p><b>Value Engine 3:</b> <span id="demoC"></span></p>
+
+<script>
+var formRangeC = document.getElementById("customRangeC");
+var outputC = document.getElementById("demoC");
+outputC.innerHTML = formRangeC.value;
+
+formRangeC.oninput = function() {
+  outputC.innerHTML = this.value;
+}
+</script>
+</p>
+<p>
+<label for="customRangeD" class="form-label">Engine 4</label>
+<input type="range" class="formRangeD" min="0" max="180" value="0" id="customRangeD" name="Engine4">
+<p><b>Value Engine 4:</b> <span id="demoD"></span></p>
+
+<script>
+var formRangeD = document.getElementById("customRangeD");
+var outputD = document.getElementById("demoD");
+outputD.innerHTML = formRangeD.value;
+
+formRangeD.oninput = function() {
+  outputD.innerHTML = this.value;
+}
+</script>
+</p>
+ <p>
+<label for="customRangeE" class="form-label"> Engine 5</label>
+<input type="range" class="formRangeE" min="0" max="180" value="0" id="customRangeE" name="Engine5">
+<p><b>Value Engine 5:</b> <span id="demoE"></span></p>
+
+<script>
+var formRangeE = document.getElementById("customRangeE");
+var outputE = document.getElementById("demoE");
+outputE.innerHTML = formRangeE.value;
+
+formRangeE.oninput = function() {
+  outputE.innerHTML = this.value;
+}
+</script>
+</p>
+<p>
+<label for="customRangeF" class="form-label">Engine 6</label>
+<input type="range" class="formRangeF" min="0" max="180" value="0" id="customRangeF" name="Engine6">
+<p><b>Value Engine 6:</b> <span id="demoF"></span></p>
+
+<script>
+var formRangeF = document.getElementById("customRangeF");
+var outputF = document.getElementById("demoF");
+outputF.innerHTML = formRangeF.value;
+
+formRangeF.oninput = function() {
+  outputF.innerHTML = this.value;
+}
+</script>
+</p>
+</p>
+
+<button class="button1" type="submit" name="run" onclick="alert('Its On')"><b>Run</b></button>
+<button class="button2" type="submit" name="save" onclick="alert('Data are save')">Save</button>
+
+<div><A HREF="baseControl.html">Go to base control </A></div>
+
+</form>
+</body>
+</html>
